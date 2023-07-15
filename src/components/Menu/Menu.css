@@ -1,0 +1,13 @@
+@import '../../index.css';
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.navigation{
+    color: var(--cor-fonte-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+}

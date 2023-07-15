@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom'
 import './Menu.css'
+import MenuLink from './MenuLink';
 
 const Menu = () => {
     return (
         <header>
             <nav className='navigation'>
-                <Link className='nav-link' to='/'>Home</Link>
-                <Link className='nav-link' to='/AboutMe'>About Me</Link>
+                <MenuLink filterURL={"/"} text={"Home"} />
+                <MenuLink filterURL={"/AboutMe"} text={"AboutMe"} />
             </nav>
         </header>
     )
