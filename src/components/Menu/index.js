@@ -1,5 +1,5 @@
 import './Menu.css'
-import MenuLink from './MenuLink';
+import MenuLink from '../MenuLink';
 
 const Menu = () => {
     return (
