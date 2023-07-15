@@ -1,0 +1,36 @@
+@import '../../index.css';
+
+.banner{
+    background: var(--azul-escuro);
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.presentation{
+    color: var(--branco);
+    margin-left: 5%;
+    width: 45%;
+}
+
+.presentation h1{
+    font-family: var(--fonte-secundaria);
+    font-size: 3em;
+}
+
+.presentation p{
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+.images{
+    margin-right: 5%;
+    width: 45%;
+}
+
+.images img{
+    border-radius: 50%;
+    margin-left: 25%;
+    width: 65%;
+}

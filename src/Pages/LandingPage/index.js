@@ -1,8 +1,13 @@
+import Banner from '../../components/Banner'
 import './LandingPage.css'
 
 const LandingPage = () => {
     return(
-        <h1>Hello World!</h1>
+        <>
+            <Banner />
+
+            <h1>Hello World!</h1>
+        </>
     )
 }
 
