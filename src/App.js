@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutMe from "./Pages/AboutMe";
 import LandingPage from "./Pages/LandingPage"
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="*" element={<h1>404 page not found</h1>} />
       </Routes>
-      
+
+      <Footer />
+
     </BrowserRouter>
   );
 }
