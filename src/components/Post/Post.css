@@ -1,0 +1,29 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5em;
+} 
+
+.post h5{
+    padding: 0.5em;
+}
+
+.post img{
+    width: 100%;
+}
+
+.post button{
+    background: var(--azul-medio);
+    border: none;
+    border-radius: 30px;
+    padding: 0.2em 0.7em;
+    transition: 0.5s;
+}
+
+.post button:hover{
+    background: var(--azul-escuro);
+    color: white;
+}

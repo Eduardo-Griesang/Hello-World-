@@ -1,0 +1,20 @@
+.post-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 5em;
+}
+
+.post-wrapper li{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #d8d8d8;
+    display: inline;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.post-wrapper li:hover{
+    transform: translateY(-10%);
+}

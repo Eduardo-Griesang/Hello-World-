@@ -1,4 +1,5 @@
 import Banner from '../../components/Banner'
+import Posts from '../../components/Posts'
 import './LandingPage.css'
 
 const LandingPage = () => {
@@ -6,7 +7,7 @@ const LandingPage = () => {
         <>
             <Banner />
 
-            <h1>Hello World!</h1>
+            <Posts />
         </>
     )
 }

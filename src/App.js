@@ -13,6 +13,7 @@ function App() {
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="*" element={<h1>404 page not found</h1>} />
       </Routes>
+      
     </BrowserRouter>
   );
 }
