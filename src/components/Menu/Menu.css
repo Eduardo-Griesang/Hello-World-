@@ -1,9 +1,12 @@
 @import '../../index.css';
 
 header{
+    background-color: var(--branco);
     display: flex;
     justify-content: center;
     padding: 1.5rem;
+    position: sticky;
+    top: 0;
 }
 
 .navigation{
