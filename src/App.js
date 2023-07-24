@@ -3,6 +3,7 @@ import AboutMe from "./Pages/AboutMe";
 import LandingPage from "./Pages/LandingPage"
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
+import RegularPage from "./components/RegularPage";
 
 function App() {
   return (
@@ -10,8 +11,13 @@ function App() {
       <Menu />
 
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/AboutMe" element={<AboutMe />} />
+        {/* esse Route utiliza rotas aninhadas, onde, dependendo do path que o navegador está, ele renderiza os diferentes componentes dentro
+        do Route, utilizando o comando <Outlet /> (documentação em index routes no React Router Dom)*/}
+        <Route path="/" element={<RegularPage />}>
+          <Route index element={<LandingPage />} />
+          <Route path="AboutMe" element={<AboutMe />} />
+        </Route>
+
         <Route path="*" element={<h1>404 page not found</h1>} />
       </Routes>
 
