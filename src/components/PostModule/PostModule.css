@@ -1,0 +1,16 @@
+.post-banner{
+    background-position: 50%;
+    filter: hue-rotate(300deg);
+    opacity: 0.5;
+    height: 20vh;
+}
+
+.post-title{
+    margin-left: 5%;
+    margin-left: 5%;
+}
+
+.post-content{
+    margin-left: 5%;
+    margin-left: 5%;
+}
