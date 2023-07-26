@@ -1,0 +1,28 @@
+.subtitle{
+    color: var(--cor-fonte-post);
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.about-me-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-right: 5%;
+    gap: 2em;
+}
+
+.about-me-paragraph{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.about-me-paragraph:first-child{
+    margin-top: 3em;
+}
+
+.about-me-img{
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 3em;
+}

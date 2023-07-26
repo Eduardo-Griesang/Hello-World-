@@ -1,13 +1,25 @@
+@import '../../index.css';
+
+.article-wrapper{
+    position: relative;
+}
+
 .post-banner{
     background-position: 50%;
     filter: hue-rotate(300deg);
-    opacity: 0.5;
+    opacity: 0.2;
     height: 20vh;
 }
 
 .post-title{
+    color: var(--cor-fonte-post);
     margin-left: 5%;
     margin-left: 5%;
+    font-family: var(--fonte-secundaria);
+    font-size: 4em;
+    font-weight: 600;
+    position: absolute;
+    top: 50px;
 }
 
 .post-content{
