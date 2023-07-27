@@ -4,6 +4,7 @@ import LandingPage from "./Pages/LandingPage"
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import RegularPage from "./components/RegularPage";
+import PostPage from "./Pages/PostPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<RegularPage />}>
           <Route index element={<LandingPage />} />
           <Route path="AboutMe" element={<AboutMe />} />
+          <Route path="PostPage/:id" element={<PostPage />} />
         </Route>
 
         <Route path="*" element={<h1>404 page not found</h1>} />
