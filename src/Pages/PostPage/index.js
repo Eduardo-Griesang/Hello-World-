@@ -17,7 +17,6 @@ const PostPage = () => {
             Title={postFromParam.titulo} 
             Banner={require(`../../assets/posts/${params.id}/capa.png`)}
         >
-        
             <div>
                 {postFromParam.texto}
             </div>

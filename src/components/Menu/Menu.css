@@ -7,10 +7,17 @@ header{
     padding: 1.5rem;
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
 
 .navigation{
     color: var(--cor-fonte-principal);
     font-family: var(--fonte-principal);
     font-size: 1.5em;
+}
+
+@media screen and (max-width:500px) {
+    header{
+        padding: 1.2rem;
+    }
 }
