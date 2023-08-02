@@ -3,6 +3,7 @@ import PostModule from '../../components/PostModule'
 
 import postJson from '../../json/posts.json'
 import './PostPage.css'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 
 const PostPage = () => {
 
@@ -17,9 +18,9 @@ const PostPage = () => {
             Title={postFromParam.titulo} 
             Banner={require(`../../assets/posts/${params.id}/capa.png`)}
         >
-            <div>
+            <ReactMarkdown>
                 {postFromParam.texto}
-            </div>
+            </ReactMarkdown>
         </PostModule>
     )
 }
