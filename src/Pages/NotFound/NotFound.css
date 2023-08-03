@@ -1,0 +1,49 @@
+.container404{
+    background-color: var(--azul-escuro);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.title404{
+    color: var(--azul-medio);
+    font-family: var(--fonte-secundaria);
+    font-size: 5em;
+    padding: 3rem;
+}
+
+.subtitle404{
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: 2em;
+}
+
+.text404{
+    color: var(--branco);
+    font-family: var(--fonte-primaria);
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+
+.button404{
+    color: var(--branco);
+    background-color: var(--azul-medio);
+    border-radius: 20px;
+    font-family: var(--fonte-primaria);
+    font-size: 1.3em;
+    margin-top: 5rem;
+    padding: 1em 2.3em;
+    transition: 0.2s;
+}
+
+.button404:hover{
+    background-color: var(  --azul-hover);
+}
+
+@media screen and (max-width:500px) {
+    .container404{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

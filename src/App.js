@@ -5,6 +5,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import RegularPage from "./components/RegularPage";
 import PostPage from "./Pages/PostPage";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="PostPage/:id" element={<PostPage />} />
         </Route>
 
-        <Route path="*" element={<h1>404 page not found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />

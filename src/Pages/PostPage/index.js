@@ -11,7 +11,11 @@ const PostPage = () => {
 
     const postFromParam = postJson.find((post) => post.id === Number(params.id))
 
-    console.log(postFromParam)
+    if (!postFromParam){
+        return(
+            <h1>Post not found...</h1>
+        )
+    }
 
     return (
         <PostModule 
