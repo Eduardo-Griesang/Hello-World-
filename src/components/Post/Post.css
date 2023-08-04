@@ -24,7 +24,7 @@
 }
 
 .post button:hover{
-    background: var(--azul-escuro);
+    background: var(--azul-hover);
     color: white;
     cursor: pointer;
 }

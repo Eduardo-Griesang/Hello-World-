@@ -24,6 +24,28 @@
     line-height: 1.2em;
 }
 
+.button-presentation{
+    display: flex;
+    gap: 5em;
+    padding-top: 2em;
+}
+
+.button-presentation a{
+    color: black;
+    background-color: var(--azul-medio);
+    border-radius: 30px;
+    font-family: var(--fonte-principal);
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0.9em;
+    transition: 0.5s;
+}
+
+.button-presentation a:hover{
+    color: var(--branco);
+    background-color: var(--azul-hover);
+}
+
 .images{
     margin-right: 5%;
     width: 45%;
