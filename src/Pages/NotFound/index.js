@@ -4,7 +4,7 @@ import './NotFound.css'
 const NotFound = () => {
 
     const navigate = useNavigate();
-    /* useNavigate passando (-1) funciona como o botão de voltar do navegador */
+    /* useNavigate passando (-1) funciona como o botão de voltar do navegador, voltando a página anterior */
 
     return (
         <div className='container404'>

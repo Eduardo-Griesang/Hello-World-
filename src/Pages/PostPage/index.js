@@ -4,6 +4,7 @@ import PostModule from '../../components/PostModule'
 import postJson from '../../json/posts.json'
 import './PostPage.css'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
+import NotFound from '../NotFound'
 
 const PostPage = () => {
 
@@ -13,7 +14,7 @@ const PostPage = () => {
 
     if (!postFromParam){
         return(
-            <h1>Post not found...</h1>
+            <NotFound />
         )
     }
 
