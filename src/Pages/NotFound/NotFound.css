@@ -29,6 +29,7 @@
 .button404{
     color: var(--branco);
     background-color: var(--azul-medio);
+    border: none;
     border-radius: 20px;
     font-family: var(--fonte-primaria);
     font-size: 1.3em;
