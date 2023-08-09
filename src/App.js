@@ -18,9 +18,9 @@ function App() {
         <Route path="/" element={<RegularPage />}>
           <Route index element={<LandingPage />} />
           <Route path="AboutMe" element={<AboutMe />} />
-          <Route path="PostPage/:id" element={<PostPage />} />
         </Route>
 
+        <Route path="PostPage/:id" element={<PostPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

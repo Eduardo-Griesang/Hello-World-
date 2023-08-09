@@ -1,10 +1,11 @@
-import { useParams } from 'react-router-dom'
+import { Routes, Route, useParams } from 'react-router-dom'
 import PostModule from '../../components/PostModule'
 
 import postJson from '../../json/posts.json'
 import './PostPage.css'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import NotFound from '../NotFound'
+import RegularPage from '../../components/RegularPage'
 
 const PostPage = () => {
 
@@ -19,14 +20,20 @@ const PostPage = () => {
     }
 
     return (
-        <PostModule 
-            Title={postFromParam.titulo} 
-            Banner={require(`../../assets/posts/${params.id}/capa.png`)}
-        >
-            <ReactMarkdown>
-                {postFromParam.texto}
-            </ReactMarkdown>
-        </PostModule>
+        <Routes>
+            <Route path='*' element={<RegularPage />}>
+                <Route index element={
+                    <PostModule 
+                    Title={postFromParam.titulo} 
+                    Banner={require(`../../assets/posts/${params.id}/capa.png`)}
+                >
+                    <ReactMarkdown>
+                        {postFromParam.texto}
+                    </ReactMarkdown>
+                </PostModule>
+                } />
+            </Route>
+        </Routes>
     )
 }
 
