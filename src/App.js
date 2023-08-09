@@ -20,7 +20,7 @@ function App() {
           <Route path="AboutMe" element={<AboutMe />} />
         </Route>
 
-        <Route path="PostPage/:id" element={<PostPage />} />
+        <Route path="PostPage/:id/*" element={<PostPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
