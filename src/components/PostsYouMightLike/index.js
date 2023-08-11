@@ -1,3 +1,4 @@
+import Posts from '../Posts';
 import './PostsYouMightLike.css';
 
 const PostsYouMightLike = ({ CurrentPost, PostsToBeShouned }) =>{
@@ -13,7 +14,7 @@ const PostsYouMightLike = ({ CurrentPost, PostsToBeShouned }) =>{
         <div>
             <h1>Other posts you might like:</h1>
             <div>
-                
+                <Posts show={posts} />
             </div>
         </div>
     )
