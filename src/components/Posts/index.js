@@ -11,6 +11,7 @@ const Posts = ({show}) => {
                         <Post element={post} />
                     </li>
                 )})
+                
                 : posts.map((post) => {
                 return(
                     <li key={post.id}>
