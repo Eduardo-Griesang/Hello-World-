@@ -14,8 +14,6 @@ const PostPage = () => {
 
     const postFromParam = postJson.find((post) => post.id === Number(params.id))
 
-    console.log(postFromParam)
-
     if (!postFromParam){
         return(
             <NotFound />
