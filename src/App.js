@@ -6,10 +6,12 @@ import Footer from "./components/Footer";
 import RegularPage from "./components/RegularPage";
 import PostPage from "./Pages/PostPage";
 import NotFound from "./Pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />
 
       <Routes>
