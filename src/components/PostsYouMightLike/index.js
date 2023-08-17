@@ -3,11 +3,18 @@ import './PostsYouMightLike.css';
 
 const PostsYouMightLike = ({ CurrentPost, PostsToBeShouned }) =>{
 
-    /* deleta o post atual para não recomendar o mesmo post que já esta sendo mostrado */
-    delete PostsToBeShouned[CurrentPost -1]
+    /* recomendedPosts é um clone de PostsToBeShouned que foi passado como prop, esse clone é necessário para a manipulação
+    da array sem afetar a prop em si */
+    const recomendedPosts = PostsToBeShouned.slice()
 
-    const FourPostToBeShouned = PostsToBeShouned.slice(0, 5)
-    console.log(PostsToBeShouned)
+    /* essa função encontra o id do post atual na array clone e o remove da array */
+    const removeCurrentPost = recomendedPosts.findIndex(post => post.id === CurrentPost)
+    if (removeCurrentPost !== -1){
+        recomendedPosts.splice(removeCurrentPost, 1)
+    }
+
+    /* essa função pega os 4 primeiros post para mostrar apenas eles, não o array completo */
+    const FourPostToBeShouned = recomendedPosts.slice(0,4)
 
     return (
         <div className='you-migth-like'>
